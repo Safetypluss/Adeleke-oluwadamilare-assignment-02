@@ -2,35 +2,53 @@
 // DO NOT EDIT THIS BLOCK
 const assignment = {};
 // ========================
-const array= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25,26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50];
-let sum = 0;
-for (let i = 0; i < array.length; i++) {
-  sum +=array[i];
-} 
-console.log(sum);
+
+
+/**
+ * Challenge - 1
+ * 
+ * Calculate and return the sum of the numbers in an array.
+ * If you did Challenge - 1, remove the comment in the line just after this function
+ * 
+ * @param {Array} arrayOfNumbers the array of numbers to sum
+ * @returns number the sum of the numbers
+ */
 function sumOfNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+  sumOfNumbers=0;
+  for(let i=0; i<arrayOfNumbers.length; i++){
+    sumOfNumbers+=arrayOfNumbers[i];
+  }
+  
+    return sumOfNumbers;
 }
-// assignment.sumOfNumbers = sumOfNumbers;
+ assignment.sumOfNumbers = sumOfNumbers;
+
 /**
  * Challenge - 2
  * 
  * Count all even numbers within an array of numbers.
- * If you did Challenge - 2, remove the comment in the line just after this function*/
-var tall = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25,26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50];
-liste(tall);
-function liste(arr) {
-  var sumeven = 0;
-  for (var i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 === 0) {
-      sumeven++;
-    } 
-  }
-  console.log("even : " + sumeven);
-}
+ * If you did Challenge - 2, remove the comment in the line just after this function
+ * 
+ * @param {Array} arrayOfNumbers the array containing even or non-even numbers
+ * @returns number the count of even numbers
+ */
 function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+ let countOfEvenNumbers=0;
+  for(let i=0; i<arrayOfNumbers.length; i++){
+    if(arrayOfNumbers[i]% 2==0){
+      countOfEvenNumbers+=1;
+    }
+    else{
+      countOfEvenNumbers+=0;
+    }
+  }
+  
+ 
+  return countOfEvenNumbers;
 }
+
+ assignment.countEvenNumbers = countEvenNumbers;
+
 /**
  * Challenge - 3
  * 
@@ -45,14 +63,17 @@ function countEvenNumbers(arrayOfNumbers) {
  * @param {Array} arrayOfNumbers the array containing temperatures in Celsius to be converted
  * @returns Array the converted temperatures in Fahrenheit
  */
-function celsiusToFahrenheit(arrayOfNumbers) {
-    return arrayOfNumbers;
+/*function celsiusToFahrenheit(arrayOfNumbers) {
+celsiusToFahrenheit=[];
+  for(x of arrayOfNumbers){
+    celsiusToFahrenheit.push(Math.trunc(x*9/5+32));
+  }
+  return celsiusToFahrenheit;
 }
-// assignment.celsiusToFahrenheit = celsiusToFahrenheit;
-
+   assignment.celsiusToFahrenheit = celsiusToFahrenheit;
+*/
 
 // ========================
 // DO NOT EDIT THIS BLOCK
 module.exports = assignment;
 // ========================
-
